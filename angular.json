@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular.io-example": {
+    "nx-angular-router": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {

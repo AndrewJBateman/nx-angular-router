@@ -3,7 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 
 import { Crisis } from '../crisis';
-import { DialogService } from '../../dialog.service';
+import { DialogService } from '@nx-angular-router-project/shared/ui-dialogs';
 
 @Component({
   selector: 'app-crisis-detail',

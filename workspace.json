@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "newProjectRoot": "projects",
   "projects": {
     "nx-angular-router": {
       "projectType": "application",

@@ -20,7 +20,7 @@ const appRoutes: Routes = [
   },
   {
     path: 'crisis-center',
-    loadChildren: () => import('./crisis-center/crisis-center.module').then(m => m.CrisisCenterModule),
+    loadChildren: () => import('@nx-angular-router-project/crisis-center/feature-page').then(m => m.CrisisCenterFeaturePageModule),
     data: { preload: true }
   },
   { path: '',   redirectTo: '/superheroes', pathMatch: 'full' },

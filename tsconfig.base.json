@@ -19,6 +19,9 @@
     "paths": {
       "@nx-angular-router-project/heroes/feature-page": [
         "libs/heroes/feature-page/src/index.ts"
+      ],
+      "@nx-angular-router-project/shared/data-access-messages": [
+        "libs/shared/data-access-messages/src/index.ts"
       ]
     },
     "rootDir": "."

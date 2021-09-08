@@ -16,7 +16,8 @@
     "@schematics/angular:component": {
       "displayBlock": true,
       "prefix": "app"
-    }
+    },
+    "@nrwl/angular:component": {}
   },
   "projects": {
     "heroes-feature-page": {
@@ -125,6 +126,22 @@
             ],
             "styles": ["apps/nx-angular-router/src/styles.css"],
             "scripts": []
+          }
+        }
+      }
+    },
+    "shared-data-access-messages": {
+      "projectType": "library",
+      "root": "libs/shared/data-access-messages",
+      "sourceRoot": "libs/shared/data-access-messages/src",
+      "prefix": "nx-angular-router-project",
+      "targets": {
+        "test": {
+          "executor": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/shared/data-access-messages/src/test.ts",
+            "tsConfig": "libs/shared/data-access-messages/tsconfig.spec.json",
+            "karmaConfig": "libs/shared/data-access-messages/karma.conf.js"
           }
         }
       }

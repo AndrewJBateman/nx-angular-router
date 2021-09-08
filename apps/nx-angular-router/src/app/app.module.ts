@@ -12,7 +12,7 @@ import { ComposeMessageComponent } from './compose-message/compose-message.compo
 import { AppRoutingModule } from './app-routing.module';
 
 import { AuthModule } from './auth/auth.module';
-import { HeroesFeaturePageModule } from '@'
+import { HeroesFeaturePageModule } from '@nx-angular-router-project/heroes/feature-page';
 
 @NgModule({
   imports: [

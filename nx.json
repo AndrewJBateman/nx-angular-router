@@ -25,6 +25,9 @@
     },
     "nx-angular-router": {
       "tags": []
+    },
+    "shared-data-access-messages": {
+      "tags": ["scope:shared", "type:data-access"]
     }
   }
 }

@@ -1,6 +1,40 @@
 {
   "version": 2,
+  "defaultProject": "nx-angular-router",
+  "cli": {
+    "defaultCollection": "@nrwl/angular"
+  },
+  "generators": {
+    "@nrwl/angular:application": {
+      "linter": "none",
+      "unitTestRunner": "karma"
+    },
+    "@nrwl/angular:library": {
+      "linter": "none",
+      "unitTestRunner": "karma"
+    },
+    "@schematics/angular:component": {
+      "displayBlock": true,
+      "prefix": "app"
+    }
+  },
   "projects": {
+    "heroes-feature-page": {
+      "projectType": "library",
+      "root": "libs/heroes/feature-page",
+      "sourceRoot": "libs/heroes/feature-page/src",
+      "prefix": "nx-angular-router-project",
+      "targets": {
+        "test": {
+          "executor": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/heroes/feature-page/src/test.ts",
+            "tsConfig": "libs/heroes/feature-page/tsconfig.spec.json",
+            "karmaConfig": "libs/heroes/feature-page/karma.conf.js"
+          }
+        }
+      }
+    },
     "nx-angular-router": {
       "projectType": "application",
       "generators": {
@@ -24,9 +58,7 @@
               "apps/nx-angular-router/src/favicon.ico",
               "apps/nx-angular-router/src/assets"
             ],
-            "styles": [
-              "apps/nx-angular-router/src/styles.css"
-            ],
+            "styles": ["apps/nx-angular-router/src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -63,7 +95,7 @@
           "defaultConfiguration": "production"
         },
         "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+          "executor": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
               "browserTarget": "nx-angular-router:build:production"
@@ -75,13 +107,13 @@
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "executor": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "nx-angular-router:build"
           }
         },
         "test": {
-          "builder": "@angular-devkit/build-angular:karma",
+          "executor": "@angular-devkit/build-angular:karma",
           "options": {
             "main": "apps/nx-angular-router/src/test.ts",
             "polyfills": "apps/nx-angular-router/src/polyfills.ts",
@@ -91,17 +123,11 @@
               "apps/nx-angular-router/src/favicon.ico",
               "apps/nx-angular-router/src/assets"
             ],
-            "styles": [
-              "apps/nx-angular-router/src/styles.css"
-            ],
+            "styles": ["apps/nx-angular-router/src/styles.css"],
             "scripts": []
           }
         }
       }
     }
-  },
-  "defaultProject": "nx-angular-router",
-  "cli": {
-    "defaultCollection": "@nrwl/angular"
   }
 }

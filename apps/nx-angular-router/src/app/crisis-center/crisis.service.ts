@@ -2,7 +2,7 @@ import { BehaviorSubject } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 import { Injectable } from '@angular/core';
-import { MessageService } from '../message.service';
+import { MessageService } from '@nx-angular-router-project/shared/data-access-messages';
 import { Crisis } from './crisis';
 import { CRISES } from './mock-crises';
 

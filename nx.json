@@ -31,6 +31,9 @@
     },
     "shared-data-access-messages": {
       "tags": ["scope:shared", "type:data-access"]
+    },
+    "shared-ui-dialogs": {
+      "tags": ["scope:shared", "type:ui"]
     }
   }
 }

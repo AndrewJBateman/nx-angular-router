@@ -161,6 +161,22 @@
           }
         }
       }
+    },
+    "shared-ui-dialogs": {
+      "projectType": "library",
+      "root": "libs/shared/ui-dialogs",
+      "sourceRoot": "libs/shared/ui-dialogs/src",
+      "prefix": "nx-angular-router-project",
+      "targets": {
+        "test": {
+          "executor": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "libs/shared/ui-dialogs/src/test.ts",
+            "tsConfig": "libs/shared/ui-dialogs/tsconfig.spec.json",
+            "karmaConfig": "libs/shared/ui-dialogs/karma.conf.js"
+          }
+        }
+      }
     }
   }
 }

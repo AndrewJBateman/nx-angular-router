@@ -25,6 +25,9 @@
       ],
       "@nx-angular-router-project/shared/data-access-messages": [
         "libs/shared/data-access-messages/src/index.ts"
+      ],
+      "@nx-angular-router-project/shared/ui-dialogs": [
+        "libs/shared/ui-dialogs/src/index.ts"
       ]
     },
     "rootDir": "."

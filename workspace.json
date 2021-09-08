@@ -1,11 +1,10 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1,
+  "version": 2,
   "newProjectRoot": "projects",
   "projects": {
     "nx-angular-router": {
       "projectType": "application",
-      "schematics": {
+      "generators": {
         "@schematics/angular:application": {
           "strict": true
         }
@@ -13,9 +12,9 @@
       "root": "apps/nx-angular-router",
       "sourceRoot": "apps/nx-angular-router/src",
       "prefix": "app",
-      "architect": {
+      "targets": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "executor": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/apps/nx-angular-router",
             "index": "apps/nx-angular-router/src/index.html",

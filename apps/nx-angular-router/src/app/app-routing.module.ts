@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { ComposeMessageComponent } from './compose-message/compose-message.component';
+import { ComposeMessageComponent } from '@nx-angular-router-project/shared/ui-dialogs';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 import { SelectivePreloadingStrategyService } from '@nx-angular-router-project/shared/data-access-navigation';

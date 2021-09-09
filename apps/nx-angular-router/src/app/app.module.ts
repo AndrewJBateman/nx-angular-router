@@ -11,7 +11,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { AppRoutingModule } from './app-routing.module';
 import { HeroesFeaturePageModule } from '@nx-angular-router-project/heroes/feature-page';
 import { AuthFeatureLoginPageModule } from '@nx-angular-router-project/auth/feature-login-page';
-import { ComposeMessageModule } from './compose-message/compose-message.module';
+import { ComposeMessageModule } from '@nx-angular-router-project/shared/ui-dialogs';
 
 @NgModule({
   imports: [

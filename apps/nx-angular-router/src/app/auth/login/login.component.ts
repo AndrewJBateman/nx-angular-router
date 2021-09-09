@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavigationExtras, Router } from '@angular/router';
-import { AuthService } from '../auth.service';
+import { AuthService } from '@nx-angular-router-project/shared/data-access-security';
+
 
 @Component({
   selector: 'app-login',

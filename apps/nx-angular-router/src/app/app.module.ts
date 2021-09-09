@@ -7,12 +7,11 @@ import { Router } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { ComposeMessageComponent } from './compose-message/compose-message.component';
 
 import { AppRoutingModule } from './app-routing.module';
-
-import { AuthModule } from './auth/auth.module';
 import { HeroesFeaturePageModule } from '@nx-angular-router-project/heroes/feature-page';
+import { AuthFeatureLoginPageModule } from '@nx-angular-router-project/auth/feature-login-page';
+import { ComposeMessageModule } from './compose-message/compose-message.module';
 
 @NgModule({
   imports: [
@@ -20,22 +19,18 @@ import { HeroesFeaturePageModule } from '@nx-angular-router-project/heroes/featu
     BrowserAnimationsModule,
     FormsModule,
     HeroesFeaturePageModule,
-    AuthModule,
+    AuthFeatureLoginPageModule,
     AppRoutingModule,
+    ComposeMessageModule,
   ],
-  declarations: [
-    AppComponent,
-    ComposeMessageComponent,
-    PageNotFoundComponent
-  ],
-  bootstrap: [ AppComponent ]
+  declarations: [AppComponent, PageNotFoundComponent],
+  bootstrap: [AppComponent],
 })
 export class AppModule {
   // Diagnostic only: inspect router configuration
   constructor(router: Router) {
     // Use a custom replacer to display function names in the route configs
     // const replacer = (key, value) => (typeof value === 'function') ? value.name : value;
-
     // console.log('Routes: ', JSON.stringify(router.config, replacer, 2));
   }
 }

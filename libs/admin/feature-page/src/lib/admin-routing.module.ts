@@ -6,7 +6,7 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { ManageCrisesComponent } from './manage-crises/manage-crises.component';
 import { ManageHeroesComponent } from './manage-heroes/manage-heroes.component';
 
-import { AuthGuard } from '../auth/auth.guard';
+import { } from '@nx'
 
 const adminRoutes: Routes = [
   {

@@ -1,6 +1,6 @@
 # :zap: Nx Angular Router
 
-* Angular Tour of Heroes app converted to Nx monorepo
+* [Angular Tour of Heroes app](https://angular.io/tutorial) converted to Nx monorepo
 * Tutorial code from [Lars Gyrup Brink Nielsen](https://www.youtube.com/c/LarsGyrupBrinkNielsen/videos)
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
@@ -84,7 +84,9 @@
 
 * [Lars Gyrup Brink Nielsen - Nx After Dark: Migrating an Angular CLI workspace to Nx](https://www.youtube.com/watch?v=5Z55XxZnFkE)
 * [Lars Gyrup Brink Nielsen - Nx After Dark: Extracting features into workspace libraries](https://www.youtube.com/watch?v=7MtQXPIpUoc&t=169s)
+* [Lars Gyrup Brink Nielsen - Nx After Dark: Extracting workspace libraries from an Angular application](https://www.youtube.com/watch?v=SxJD3ttB5go)
 * [Nx: Transitioning to Nx](https://nx.dev/latest/angular/migration/migration-angular)
+* [In Depth Dev: Shell Library patterns with Nx and Monorepo Architectures](https://indepth.dev/posts/1117/the-shell-library-patterns-with-nx-and-monorepo-architectures)
 
 ## :file_folder: License
 
